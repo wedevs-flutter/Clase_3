@@ -1,5 +1,7 @@
 
-import 'package:clase1/pantalla1.dart';
+
+
+import 'package:clase1/screen/login2.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -12,8 +14,9 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       //showSemanticsDebugger: false,
       debugShowCheckedModeBanner: false,
-      home: nuevo(),
+      home: Login2(),
     );
+      
   }
   Widget nuevo(){
     return Scaffold(
