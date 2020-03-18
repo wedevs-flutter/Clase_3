@@ -1,7 +1,10 @@
 
 
 
+import 'package:clase1/screen/clasescrol.dart';
+import 'package:clase1/screen/clasestack.dart';
 import 'package:clase1/screen/login2.dart';
+import 'package:clase1/screen/pantalla1.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -14,7 +17,8 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       //showSemanticsDebugger: false,
       debugShowCheckedModeBanner: false,
-      home: Login2(),
+      home://Clasestack()
+       Clasescrol(),
     );
       
   }

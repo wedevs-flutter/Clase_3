@@ -8,7 +8,13 @@ class _Login2State extends State<Login2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.blueGrey,
       body: cuerpo(),
+      
+    );
+  }
+  Widget carddist(){
+    return Card(
       
     );
   }
@@ -22,15 +28,20 @@ class _Login2State extends State<Login2> {
           children: <Widget>[
             FlutterLogo(size: 200,),
             SizedBox(height: 30,),
-            TextField(
+            Expanded(
+              flex: 1,
+              child:TextField(
               decoration: InputDecoration(
                 prefixIcon: Icon(Icons.email),
                 hintText: "Correo",
                 border: OutlineInputBorder()
               ),
-            ),
-            SizedBox(height: 30,),
-            TextField(
+            ), ),
+            
+            //SizedBox(height: 30,),
+            Expanded(
+              flex: 2,
+              child:TextField(
               obscureText: true,
               decoration: InputDecoration(
                 suffixIcon: Icon(Icons.remove_red_eye),
@@ -38,8 +49,9 @@ class _Login2State extends State<Login2> {
                 border: OutlineInputBorder()
               ),
 
-            ),
+            ) ),
             SizedBox(height: 30,),
+           
             RaisedButton(
               child: Text("REGISTRAR"),
               color: Colors.blueAccent,
@@ -50,5 +62,37 @@ class _Login2State extends State<Login2> {
       ),
     );
 
+  }
+  Widget cuerpo2(){
+    return Container(
+    child: ListView(
+      children: <Widget>[
+        FlutterLogo(size: 200,),
+            SizedBox(height: 30,),
+            TextField(
+              decoration: InputDecoration(
+                prefixIcon: Icon(Icons.email),
+                hintText: "Correo",
+                border: OutlineInputBorder()
+              ),
+            ),
+            
+            SizedBox(height: 30,),
+            TextField(
+              obscureText: true,
+              decoration: InputDecoration(
+                suffixIcon: Icon(Icons.remove_red_eye),
+                hintText: "Contraseña",
+                border: OutlineInputBorder()
+              ),
+            ),
+            SizedBox(height: 30,),
+             
+            
+          
+      ],
+    ),
+    
+    );
   }
 }
