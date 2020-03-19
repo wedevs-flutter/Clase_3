@@ -13,35 +13,26 @@ class _Login2State extends State<Login2> {
       
     );
   }
-  Widget carddist(){
-    return Card(
-      
-    );
-  }
   Widget cuerpo(){
     return Container(
       padding: EdgeInsets.all(50),
       //height: 300,
-      color: Colors.blueGrey,
-      child: Center(
+     // color: Colors.blueGrey,
+      child: SingleChildScrollView(
         child: Column(
           children: <Widget>[
             FlutterLogo(size: 200,),
             SizedBox(height: 30,),
-            Expanded(
-              flex: 1,
-              child:TextField(
+            TextField(
               decoration: InputDecoration(
                 prefixIcon: Icon(Icons.email),
                 hintText: "Correo",
                 border: OutlineInputBorder()
               ),
-            ), ),
+            ),
             
-            //SizedBox(height: 30,),
-            Expanded(
-              flex: 2,
-              child:TextField(
+            SizedBox(height: 30,),
+            TextField(
               obscureText: true,
               decoration: InputDecoration(
                 suffixIcon: Icon(Icons.remove_red_eye),
@@ -49,7 +40,7 @@ class _Login2State extends State<Login2> {
                 border: OutlineInputBorder()
               ),
 
-            ) ),
+            ),
             SizedBox(height: 30,),
            
             RaisedButton(
@@ -62,37 +53,5 @@ class _Login2State extends State<Login2> {
       ),
     );
 
-  }
-  Widget cuerpo2(){
-    return Container(
-    child: ListView(
-      children: <Widget>[
-        FlutterLogo(size: 200,),
-            SizedBox(height: 30,),
-            TextField(
-              decoration: InputDecoration(
-                prefixIcon: Icon(Icons.email),
-                hintText: "Correo",
-                border: OutlineInputBorder()
-              ),
-            ),
-            
-            SizedBox(height: 30,),
-            TextField(
-              obscureText: true,
-              decoration: InputDecoration(
-                suffixIcon: Icon(Icons.remove_red_eye),
-                hintText: "Contraseña",
-                border: OutlineInputBorder()
-              ),
-            ),
-            SizedBox(height: 30,),
-             
-            
-          
-      ],
-    ),
-    
-    );
   }
 }

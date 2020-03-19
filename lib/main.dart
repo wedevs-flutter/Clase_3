@@ -1,10 +1,7 @@
 
-
-
-import 'package:clase1/screen/clasescrol.dart';
-import 'package:clase1/screen/clasestack.dart';
-import 'package:clase1/screen/login2.dart';
-import 'package:clase1/screen/pantalla1.dart';
+import 'package:clase1/loginstack.dart';
+import 'package:clase1/manejolis.dart';
+import 'package:clase1/screen/login2.dart' show Login2;
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -17,8 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       //showSemanticsDebugger: false,
       debugShowCheckedModeBanner: false,
-      home://Clasestack()
-       Clasescrol(),
+      home: Loginstack(),
     );
       
   }
@@ -88,6 +84,5 @@ class MyApp extends StatelessWidget {
     );
   }
   
- 
 }
 
